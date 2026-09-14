@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shir Levi - Computer Science Student & Front-End Developer | Digital Business Card and Portfolio">
+  <meta name="author" content="Shir Levi">
+  <title>Shir Levi | Digital Business Card</title>
+
+  <!-- External Stylesheet (Strict requirement: No inline CSS or scripts) -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Pure CSS Theme Toggle Checkbox (No JavaScript) -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" aria-label="Toggle Dark and Light Mode">
+
+  <!-- Main Website Container Shell -->
+  <div class="site-wrapper">
+
+    <!-- Fixed Theme Switcher Button -->
+    <aside class="theme-switcher-container">
+      <label for="theme-toggle" class="theme-toggle-label" title="Toggle Dark / Light Mode">
+        <div class="theme-switch-track">
+          <!-- Sun Icon (Light Mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm12.25 0a.75.75 0 01-.75.75H16.75a.75.75 0 010-1.5H19a.75.75 0 01.75.75zM5.25 12a.75.75 0 01-.75.75H2.25a.75.75 0 010-1.5H4.5a.75.75 0 01.75.75zM12 17.25a.75.75 0 01.75.75V20.25a.75.75 0 01-1.5 0V18a.75.75 0 01.75-.75zM6.343 6.343a.75.75 0 011.06 0l1.592 1.591a.75.75 0 01-1.06 1.06L6.343 7.404a.75.75 0 010-1.06zm10.252 10.252a.75.75 0 011.06 0l1.592 1.591a.75.75 0 01-1.06 1.06l-1.592-1.591a.75.75 0 010-1.06zm-10.252 0a.75.75 0 010 1.06l-1.591 1.592a.75.75 0 01-1.06-1.06l1.591-1.592a.75.75 0 011.06 0zm11.313-11.313a.75.75 0 010 1.06l-1.592 1.592a.75.75 0 11-1.06-1.06l1.592-1.592a.75.75 0 011.06 0z"/>
+          </svg>
+
+          <!-- Moon Icon (Dark Mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"/>
+          </svg>
+
+          <span class="theme-switch-thumb"></span>
+        </div>
+        <span class="theme-status-text">
+          <span class="text-light">Light</span>
+          <span class="text-dark">Dark</span>
+        </span>
+      </label>
+    </aside>
+    <div class="card-container">
+
+      <!-- ===================================================================
+           HEADER & HERO SECTION (Name, Title, Profile Picture, Status)
+           =================================================================== -->
+      <header class="profile-header">
+        <div class="avatar-wrapper">
+          <!-- Profile Picture (Can be replaced with your own photo file) -->
+          <img src="assets/avatar.svg" alt="Shir Levi - Profile Avatar" class="profile-avatar" width="130" height="130">
+          <div class="status-badge" title="Open to Opportunities">
+            <span class="status-dot"></span>
+            <span>Open to Work</span>
+          </div>
+        </div>
+
+        <h1 class="profile-name">Shir Levi</h1>
+        <p class="profile-role">Computer Science Student &amp; Front-End Developer</p>
+        <span class="role-pill">B.Sc. Computer Science Candidate</span>
+
+        <!-- Quick Social & Action Bar -->
+        <div class="header-social-links">
+          <a href="mailto:shir.levi.cs@example.com" class="btn-header" title="Send Email">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+            </svg>
+            <span>Email</span>
+          </a>
+
+          <a href="https://github.com/shir0603" target="_blank" rel="noopener noreferrer" class="btn-header" title="GitHub Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+
+          <a href="https://linkedin.com/in/shir-levi" target="_blank" rel="noopener noreferrer" class="btn-header" title="LinkedIn Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- ===================================================================
+           MAIN BODY (About, Skills, Projects, Contact Details)
+           =================================================================== -->
+      <main class="main-content">
+
+        <!-- SECTION 1: About Me -->
+        <section id="about" class="content-section" aria-labelledby="about-heading">
+          <h2 id="about-heading" class="section-title">
+            <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+            </svg>
+            <span>About Me</span>
+          </h2>
+          <article class="about-card">
+            <p>
+              Hi there! I am a passionate <strong class="highlight-text">Computer Science Student</strong> with a deep enthusiasm for front-end architecture, clean UI design, and modern software development. My academic foundation encompasses data structures, algorithms, and software design principles, complemented by hands-on development of real-world web applications.
+            </p>
+            <p>
+              I thrive on tackling complex algorithmic challenges and crafting responsive, accessible web interfaces that deliver intuitive user experiences. Currently seeking junior developer or internship opportunities where I can contribute to impactful software products, collaborate with talented engineering teams, and expand my technical expertise.
+            </p>
+          </article>
+        </section>
+
+        <!-- SECTION 2: Technical Skills & Tools -->
+        <section id="skills" class="content-section" aria-labelledby="skills-heading">
+          <h2 id="skills-heading" class="section-title">
+            <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/>
+            </svg>
+            <span>Skills &amp; Technologies</span>
+          </h2>
+          <div class="skills-grid">
+
+            <div class="skill-category">
+              <h3 class="category-title"><span class="category-dot"></span>Programming Languages</h3>
+              <ul class="skills-tags">
+                <li class="skill-tag">Python</li>
+                <li class="skill-tag">Java</li>
+                <li class="skill-tag">C / C++</li>
+                <li class="skill-tag">SQL</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="category-title"><span class="category-dot"></span>Web &amp; Frontend</h3>
+              <ul class="skills-tags">
+                <li class="skill-tag">HTML5 (Semantic)</li>
+                <li class="skill-tag">CSS3 / Modern CSS</li>
+                <li class="skill-tag">Responsive Design</li>
+                <li class="skill-tag">Flexbox &amp; CSS Grid</li>
+                <li class="skill-tag">Web Accessibility (a11y)</li>
+              </ul>
+            </div>
+
+            <div class="skill-category">
+              <h3 class="category-title"><span class="category-dot"></span>Tools &amp; Workflow</h3>
+              <ul class="skills-tags">
+                <li class="skill-tag">Git &amp; GitHub</li>
+                <li class="skill-tag">VS Code</li>
+                <li class="skill-tag">Linux CLI</li>
+                <li class="skill-tag">Chrome DevTools</li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- SECTION 3: Featured Projects -->
+        <section id="projects" class="content-section" aria-labelledby="projects-heading">
+          <h2 id="projects-heading" class="section-title">
+            <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"/>
+            </svg>
+            <span>Featured Projects</span>
+          </h2>
+          <div class="projects-grid">
+
+            <!-- Project Card 1 -->
+            <article class="project-card">
+              <div class="project-header">
+                <div class="project-badge-row">
+                  <span class="project-type-tag">Web Development</span>
+                  <span class="status-active-pill">Live</span>
+                </div>
+                <h3 class="project-name">Digital Business Card &amp; Portfolio</h3>
+                <p class="project-description">
+                  A high-performance personal portfolio site built strictly using semantic HTML5 and modern CSS3. Features a pure CSS theme toggle (zero JavaScript), custom CSS variables, and full responsiveness across mobile and desktop devices.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li class="tech-tag">HTML5</li>
+                <li class="tech-tag">CSS3</li>
+                <li class="tech-tag">Responsive</li>
+                <li class="tech-tag">Zero-JS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/shir0603/html_page" target="_blank" rel="noopener noreferrer" class="btn-project btn-primary-outline">
+                  <span>Source Code</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+                <a href="#" class="btn-project btn-ghost">Demo</a>
+              </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="project-card">
+              <div class="project-header">
+                <div class="project-badge-row">
+                  <span class="project-type-tag">Algorithms &amp; Systems</span>
+                  <span class="status-active-pill">Completed</span>
+                </div>
+                <h3 class="project-name">Graph Algorithm &amp; Maze Visualizer</h3>
+                <p class="project-description">
+                  An algorithmic routing engine implementing Dijkstra, A*, and Breadth-First Search (BFS) graph traversals. Calculates optimal paths across dynamic grid topologies with benchmark comparison logs.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li class="tech-tag">Python</li>
+                <li class="tech-tag">Algorithms</li>
+                <li class="tech-tag">Data Structures</li>
+                <li class="tech-tag">OOP</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/shir0603" target="_blank" rel="noopener noreferrer" class="btn-project btn-primary-outline">
+                  <span>Repository</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article class="project-card">
+              <div class="project-header">
+                <div class="project-badge-row">
+                  <span class="project-type-tag">Productivity Tool</span>
+                  <span class="status-active-pill">Completed</span>
+                </div>
+                <h3 class="project-name">Campus Task &amp; Semester Study Hub</h3>
+                <p class="project-description">
+                  A modular web dashboard for students to manage coursework deadlines, organize assignments by priority, and schedule study intervals with an intuitive, clean interface.
+                </p>
+              </div>
+              <ul class="project-tech-list">
+                <li class="tech-tag">HTML5</li>
+                <li class="tech-tag">CSS Grid</li>
+                <li class="tech-tag">UI Design</li>
+                <li class="tech-tag">REST API</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/shir0603" target="_blank" rel="noopener noreferrer" class="btn-project btn-primary-outline">
+                  <span>Repository</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- SECTION 4: Contact Information -->
+        <section id="contact" class="content-section" aria-labelledby="contact-heading">
+          <h2 id="contact-heading" class="section-title">
+            <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+            </svg>
+            <span>Get in Touch</span>
+          </h2>
+          <div class="contact-grid">
+
+            <!-- Email Card -->
+            <a href="mailto:shir.levi.cs@example.com" class="contact-card">
+              <div class="contact-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Email Address</span>
+                <span class="contact-value">shir.levi.cs@example.com</span>
+              </div>
+            </a>
+
+            <!-- Phone Card -->
+            <a href="tel:+972541234567" class="contact-card">
+              <div class="contact-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+972 54-123-4567</span>
+              </div>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/shir0603" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/shir0603</span>
+              </div>
+            </a>
+
+            <!-- LinkedIn Card -->
+            <a href="https://linkedin.com/in/shir-levi" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">linkedin.com/in/shir-levi</span>
+              </div>
+            </a>
+
+          </div>
+        </section>
+
+      </main>
+
+      <!-- ===================================================================
+           FOOTER
+           =================================================================== -->
+      <footer class="site-footer">
+        <p>&copy; 2026 Shir Levi. All rights reserved.</p>
+        <div class="footer-tags">
+          <span class="badge-pure-css">&#10004; Semantic HTML5</span>
+          <span class="badge-pure-css">&#10004; Pure CSS3 Theme Toggle</span>
+          <span class="badge-pure-css">&#10004; Zero JavaScript</span>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+</body>
+</html>
