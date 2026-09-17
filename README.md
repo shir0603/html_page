@@ -1,75 +1,43 @@
-# Digital Business Card | כרטיס ביקור דיגיטלי - Shir Lusky
+# Shir Lusky - Digital Business Card
 
-> **תרגיל מספר 1 - כרטיס ביקור דיגיטלי עסקי**  
-> אתר אישי המשמש ככרטיס ביקור דיגיטלי עבור שיר לוסקי (Shir Lusky) - מהנדסת DevOps וסטודנטית למדעי המחשב, המציג פרטי קשר, רקע מקצועי עשיר, כישורים טכנולוגיים ופרויקטים נבחרים.
+A modern, responsive digital business card and personal portfolio website for **Shir Lusky**, DevOps Engineer.
 
----
-
-## 🌟 תכונות הפרויקט (Key Features)
-
-- 🎨 **עיצוב מודרני ומוקפד**: פריסה אלגנטית ומקצועית עם טיפוגרפיה חדה, כרטיסיות מוגבהות ומיקרו-אינטראקציות.
-- 🌓 **מצב כהה ומצב בהיר (Dark / Light Mode)**: מימוש **100% טהור ב-HTML ו-CSS** ללא שימוש באף שורת JavaScript (Zero JS).
-- 📱 **רספונסיביות מלאה**: מותאם בקפידה למסכי סמארטפונים, טאבלטים ומסכי מחשב רחבים באמצעות CSS Grid, Flexbox ו-Media Queries.
-- ♿ **סמנטיקה ונגישות (Accessibility & Semantic HTML)**: שימוש נכון ומדויק בתגיות HTML5 (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`), יחסי ניגודיות גבוהים ותמיכה בניווט מקלדת.
-- ⚡ **Zero JavaScript**: עמידה מלאה בכל מגבלות התרגיל (ללא `<script>`, ללא `onclick`, וללא קוד עיצוב בתוך ה-HTML).
-- 🚀 **מוכן להגשה ול-GitHub Pages**: כל הנתיבים הם יחסיים (Relative Paths), כך שהאתר עובד מידית הן מקומית והן באירוח ב-GitHub Pages.
+Built with **pure HTML5 and CSS3** (zero JavaScript), featuring a seamless CSS-driven light/dark theme switcher, semantic markup, and responsive design.
 
 ---
 
-## 📁 מבנה הקבצים (File Structure)
+## ✨ Features
+
+- **Zero JavaScript**: 100% pure CSS implementation for all styling and interactive state, including the animated theme toggle switch.
+- **Light & Dark Themes**: Dedicated color schemes using CSS custom properties with smooth transitions.
+- **Responsive Layout**: Mobile-first design adapting seamlessly from small mobile screens to tablets and desktop displays using CSS Grid and Flexbox.
+- **Semantic & Accessible**: Built with standard HTML5 elements (`<header>`, `<main>`, `<section>`, `<article>`, `<footer>`), high-contrast palettes, and keyboard navigation support.
+- **Showcase Sections**: Highlights professional background, categorized technical skill sets, featured projects, and contact channels.
+
+---
+
+## 📁 Repository Structure
 
 ```
 html_page/
-├── index.html          # עמוד ה-HTML הראשי הבנוי בסמנטיקה מלאה
-├── styles.css          # גיליון סגנונות חיצוני (משתני CSS, מצב כהה/בהיר, רספונסיביות)
+├── index.html          # Semantic HTML5 markup
+├── styles.css          # Stylesheet, CSS variables, and responsive breakpoints
 ├── assets/
-│   ├── profile.png     # תמונת הפרופיל האישית של שיר לוסקי
-│   └── avatar.svg      # איור וקטורי חלופי
-└── README.md           # תיעוד והוראות הגשה
+│   └── profile.png     # Profile photo
+└── README.md           # Project documentation
 ```
 
 ---
 
-## 📋 עמידה בדרישות המטלה (Assignment Compliance Checklist)
+## 🌐 Live Demo
 
-| דרישה | סטטוס | פירוט |
-| :--- | :---: | :--- |
-| **שם מלא ותפקיד/תחום התמחות** | ✅ | מוצג בהבלטה בראש העמוד (`Shir Lusky - DevOps Engineer`) |
-| **תמונת פרופיל** | ✅ | תמונת פרופיל אישית מעוצבת בתיקיית `assets/profile.png` עם מחוון זמינות לעבודה |
-| **פסקה קצרה על עצמכם** | ✅ | ביוגרפיה מפורטת: 4 שנות ניסיון כמהנדסת DevOps, בוגרת קורס DevOps, ולימודי תואר במדעי המחשב |
-| **קישור לחשבון GitHub** | ✅ | קישור פעיל ומעוצב ל-GitHub (`https://github.com/shir0603`) |
-| **קישור לפרופיל LinkedIn** | ✅ | קישור פעיל ומעוצב ל-LinkedIn (`https://linkedin.com/in/shir-lusky`) |
-| **מספר טלפון ליצירת קשר** | ✅ | מוצג ישירות כטקסט מעוצב (`+972 54-123-4567`) ללא קישור |
-| **כתובת דואר אלקטרוני** | ✅ | מוצג ישירות כטקסט מעוצב (`shirl@gmail.com`) ללא קישור |
-| **כפתור מצב כהה/בהיר (Dark / Light)** | ✅ | כפתור Toggle מעוצב ומודרני המבוסס על CSS טהור ומשתני צבע מותאמים |
-| **רספונסיביות (מובייל ומסכים גדולים)** | ✅ | התאמה מלאה למובייל, טאבלט ודסקטופ |
-| **מבנה HTML סמנטי ותקין** | ✅ | תגיות סמנטיות מלאות, היררכיית כותרות מסודרת ותגיות Meta |
-| **הפרדת CSS לקובץ חיצוני** | ✅ | כל העיצוב מרוכז ב-`styles.css` ללא עיצוב בתוך ה-HTML |
-| **איסור שימוש ב-JavaScript** | ✅ | 0 שורות JS! אין תגיות `<script>` או פקודות JS |
-| **בונוסים לציון מקסימלי** | ✅ | אזור ייעודי ל-3 פרויקטים נבחרים (משחק Flexbox, משחק סימולציית HTTP/REST, ותוסף Kafka Quotas) ואזור כישורים טכנולוגיים מחולק לקטגוריות |
+The site is published with GitHub Pages:  
+👉 **[https://shir0603.github.io/html_page/](https://shir0603.github.io/html_page/)**
 
 ---
 
-## 🚀 הוראות פריסה ב-GitHub Pages (Deployment Guide)
+## 📬 Connect
 
-לפי הנחיות ההגשה בסעיף 2–4, יש לפרסם את הפרויקט ב-GitHub Pages:
-
-1. **ודאו שהפרויקט שמור ודחוף ל-GitHub**:
-   ```bash
-   git add .
-   git commit -m "Update profile to Shir Lusky DevOps Engineer"
-   git push origin build_html_from_pdf
-   ```
-2. **הגדרת GitHub Pages**:
-   - היכנסו ל-Repository שלכם ב-GitHub: `https://github.com/shir0603/html_page`.
-   - ודאו שה-Repository מוגדר כ-**Public** (ציבורי).
-   - גשו ללשונית **Settings** -> בתפריט השמאלי לחצו על **Pages**.
-   - תחת **Build and deployment** -> **Branch**, בחרו בענף `build_html_from_pdf` (או `main`) ותיקיית `/ (root)`.
-   - לחצו על **Save**.
-3. **קבלת הקישור החי**:
-   - תוך דקה או שתיים יופיע בראש עמוד ה-Pages הקישור לאתר הפעיל שלכם:  
-     `https://shir0603.github.io/html_page/`
-4. **הגשה במודל**:
-   - קישור ל-Repository הציבורי.
-   - קישור לאתר החי ב-GitHub Pages.
-   - קובץ ZIP המכיל את קבצי הפרויקט (`index.html`, `styles.css`, ותיקיית `assets/`).
+- **GitHub**: [shir0603](https://github.com/shir0603)
+- **LinkedIn**: [shir-lusky](https://linkedin.com/in/shir-lusky)
+- **Email**: shirl@gmail.com
