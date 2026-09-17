@@ -7,27 +7,27 @@
   <meta name="author" content="Shir Lusky">
   <title>Shir Lusky | DevOps Engineer</title>
 
-  <!-- External Stylesheet (Strict requirement: No inline CSS or scripts) -->
+  <!-- External Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Pure CSS Theme Toggle Checkbox (No JavaScript) -->
+  <!-- Theme Toggle Controller -->
   <input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" aria-label="Toggle Dark and Light Mode">
 
   <!-- Main Website Container Shell -->
   <div class="site-wrapper">
 
-    <!-- Fixed Theme Switcher Button -->
+    <!-- Theme Switcher Button -->
     <aside class="theme-switcher-container">
       <label for="theme-toggle" class="theme-toggle-label" title="Toggle Dark / Light Mode">
         <div class="theme-switch-track">
-          <!-- Sun Icon (Light Mode) -->
+          <!-- Sun Icon -->
           <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zm12.25 0a.75.75 0 01-.75.75H16.75a.75.75 0 010-1.5H19a.75.75 0 01.75.75zM5.25 12a.75.75 0 01-.75.75H2.25a.75.75 0 010-1.5H4.5a.75.75 0 01.75.75zM12 17.25a.75.75 0 01.75.75V20.25a.75.75 0 01-1.5 0V18a.75.75 0 01.75-.75zM6.343 6.343a.75.75 0 011.06 0l1.592 1.591a.75.75 0 01-1.06 1.06L6.343 7.404a.75.75 0 010-1.06zm10.252 10.252a.75.75 0 011.06 0l1.592 1.591a.75.75 0 01-1.06 1.06l-1.592-1.591a.75.75 0 010-1.06zm-10.252 0a.75.75 0 010 1.06l-1.591 1.592a.75.75 0 01-1.06-1.06l1.591-1.592a.75.75 0 011.06 0zm11.313-11.313a.75.75 0 010 1.06l-1.592 1.592a.75.75 0 11-1.06-1.06l1.592-1.592a.75.75 0 011.06 0z"/>
           </svg>
 
-          <!-- Moon Icon (Dark Mode) -->
+          <!-- Moon Icon -->
           <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
             <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clip-rule="evenodd"/>
           </svg>
@@ -43,12 +43,10 @@
 
     <div class="card-container">
 
-      <!-- ===================================================================
-           HEADER & HERO SECTION (Name, Title, Profile Picture, Status)
-           =================================================================== -->
+      <!-- Header -->
       <header class="profile-header">
         <div class="avatar-wrapper">
-          <!-- Profile Picture uploaded by Shir Lusky -->
+          <!-- Profile Picture -->
           <img src="assets/profile.png" alt="Shir Lusky - DevOps Engineer" class="profile-avatar" width="130" height="130">
           <div class="status-badge" title="Open to Opportunities">
             <span class="status-dot"></span>
@@ -60,7 +58,7 @@
         <p class="profile-role">DevOps Engineer</p>
         <span class="role-pill">4+ Years Experience &bull; B.Sc. Computer Science Candidate</span>
 
-        <!-- Quick Social & Action Bar (GitHub & LinkedIn) -->
+        <!-- Social Links -->
         <div class="header-social-links">
           <a href="https://github.com/shir0603" target="_blank" rel="noopener noreferrer" class="btn-header" title="GitHub Profile">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -78,12 +76,10 @@
         </div>
       </header>
 
-      <!-- ===================================================================
-           MAIN BODY (About, Skills, Projects, Contact Details)
-           =================================================================== -->
+      <!-- Main Content -->
       <main class="main-content">
 
-        <!-- SECTION 1: About Me -->
+        <!-- About Section -->
         <section id="about" class="content-section" aria-labelledby="about-heading">
           <h2 id="about-heading" class="section-title">
             <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
@@ -101,7 +97,7 @@
           </article>
         </section>
 
-        <!-- SECTION 2: Technical Skills & Tools -->
+        <!-- Skills Section -->
         <section id="skills" class="content-section" aria-labelledby="skills-heading">
           <h2 id="skills-heading" class="section-title">
             <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
@@ -150,7 +146,7 @@
           </div>
         </section>
 
-        <!-- SECTION 3: Featured Projects -->
+        <!-- Projects Section -->
         <section id="projects" class="content-section" aria-labelledby="projects-heading">
           <h2 id="projects-heading" class="section-title">
             <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
@@ -160,7 +156,7 @@
           </h2>
           <div class="projects-grid">
 
-            <!-- Project Card 1: Flexbox Learning Game -->
+            <!-- Project Card: Flexbox Learning Game -->
             <article class="project-card">
               <div class="project-header">
                 <div class="project-badge-row">
@@ -186,7 +182,7 @@
               </div>
             </article>
 
-            <!-- Project Card 2: HTTP and REST Game -->
+            <!-- Project Card: HTTP & REST Game -->
             <article class="project-card">
               <div class="project-header">
                 <div class="project-badge-row">
@@ -212,7 +208,7 @@
               </div>
             </article>
 
-            <!-- Project Card 3: Kafka Quotas Plugin -->
+            <!-- Project Card: Kafka Quotas Plugin -->
             <article class="project-card">
               <div class="project-header">
                 <div class="project-badge-row">
@@ -241,7 +237,7 @@
           </div>
         </section>
 
-        <!-- SECTION 4: Contact Information -->
+        <!-- Contact Section -->
         <section id="contact" class="content-section" aria-labelledby="contact-heading">
           <h2 id="contact-heading" class="section-title">
             <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
@@ -251,7 +247,7 @@
           </h2>
           <div class="contact-grid">
 
-            <!-- Email Card (Address displayed directly, no link) -->
+            <!-- Email Card -->
             <div class="contact-card">
               <div class="contact-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
@@ -264,7 +260,7 @@
               </div>
             </div>
 
-            <!-- Phone Card (Displayed directly, no link) -->
+            <!-- Phone Card -->
             <div class="contact-card">
               <div class="contact-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
@@ -308,9 +304,7 @@
 
       </main>
 
-      <!-- ===================================================================
-           FOOTER
-           =================================================================== -->
+      <!-- Footer -->
       <footer class="site-footer">
         <p>&copy; 2026 Shir Lusky. All rights reserved.</p>
       </footer>
