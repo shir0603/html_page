@@ -22,10 +22,3 @@ html_page/
 The site is published with GitHub Pages:  
 👉 **[https://shir0603.github.io/html_page/](https://shir0603.github.io/html_page/)**
 
----
-
-## 📬 Connect
-
-- **GitHub**: [shir0603](https://github.com/shir0603)
-- **LinkedIn**: [shir-lusky](https://linkedin.com/in/shir-lusky)
-- **Email**: shirl@gmail.com
